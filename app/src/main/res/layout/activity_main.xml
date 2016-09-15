@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.dhingra_shubham.calltaskf22labs.MainActivity">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter Phone Number"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="25sp"
+        android:id="@+id/phonenumber"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="350px"
+        android:layout_height="100px"
+        android:layout_marginTop="15sp"
+        android:layout_gravity="center"
+        android:id="@+id/callbutton"
+        android:background="@drawable/call_button1"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginBottom="15sp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Reminder"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:onClick="setReminder"
+        android:gravity="center"
+        android:background="@drawable/buttonshape1"
+        android:layout_below="@+id/callbutton"
+        android:id="@+id/setbutton"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#008A80"
+        android:textSize="50sp"
+        android:layout_below="@+id/setbutton"
+        android:id="@+id/msg1"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Reminder"
+        android:textSize="25sp"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/white"
+        android:onClick="stopAlertNotification"
+        android:gravity="center"
+        android:layout_below="@+id/msg1"
+        android:id="@+id/cancelbutton"
+        />
+
+
+</RelativeLayout>
